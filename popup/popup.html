@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AWS Helper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div id="settings-panel">
+        <h3>OpenAI API Settings</h3>
+        <input type="password" id="api-key-input" placeholder="OPEN_API_KEY">
+        <button id="save-key-btn">Save Key</button>
+        <div id="key-status"></div>
+      </div>
+  <div class="chat-container">
+    <div id="chat-messages"></div>
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Ask about AWS...">
+      <button id="send-btn">Send</button>
+    </div>
+    <div class="guide-control">
+      <button id="guide-btn">Enable UI Guidance</button>
+    </div>
+  </div>
+  <script src = "config.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
